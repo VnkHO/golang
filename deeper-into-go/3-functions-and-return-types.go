@@ -19,6 +19,12 @@
 		func newCard() string {}
 
 		newCard -> Define a function called 'newCard'
-		string	-> When executed, this function will return a value of type 'string'
+		string	-> When execute
+
+		example:
+
+		func add(x int, y int) int {
+			return x + y
+		}
 
 */
