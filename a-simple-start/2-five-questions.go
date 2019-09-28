@@ -36,7 +36,24 @@
 													-> package uploader		-> Defines a package that can be used as a dependency (helper code)
 
 
+
 		- What does 'import "fmt" mean ?
+			- Access to some code that is written inside of another package
+			- Can import our reusable code too (eg: import "calculator")
+
+
 		- What is that 'func' thing ?
+			- func means function
+
+
+
 		- How is the main.go file organized ?
+			- package main -> package declaration // Always at the top
+
+			- import "fmt" -> Import other packafges that we need
+				// Then right underneath that package main will list out all the other packages that we might need to import into this
+
+			- func main() { fmt.Println("Hello people!") } -> Declare functions, tell Go to do things
+
+
 */
