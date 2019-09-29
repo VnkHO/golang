@@ -11,6 +11,7 @@
 
 		example:
 			cards := []string{"Ace of Diamonds", newCard()}
+			cards = append(cards, "Six of Spades")
 
 		How to add an element to slice
 			- cards = append(cards, "Six of Spades");

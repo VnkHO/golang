@@ -13,8 +13,21 @@ import "fmt"
 
 type deck []string
 
-// Print -> Purpose of this function is going to be to loop through our deck of cards and print ou the value
+func newDeck() deck {
+	cards := deck{}
 
+	cardSuits := []string{"Spades", "Diamonds", "Hearts", "Clubs"}
+	cardValues := []string{"Ace", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King"}
+
+	for _, suit := range cardSuits {
+		for _, value := range cardValues {
+			cards = append(cards, value+" of "+suit)
+		}
+	}
+	return cards
+}
+
+// Print -> Purpose of this function is going to be to loop through our deck of cards and print ou the value
 func (d deck) print() {
 
 	for i, card := range d {
