@@ -21,7 +21,11 @@
 				firstName -> "Alex"
 				lastName	-> "Anderson"
 
-
+	// Defining a new custom type
+	type person struct {
+		firstName string
+		lastName  string
+	}
 
 
 
