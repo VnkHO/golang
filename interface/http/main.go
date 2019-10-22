@@ -10,7 +10,7 @@ import (
 func main() {
 	response, err := http.Get("https://www.google.fr")
 	if err != nil {
-		fmt.Println("Error :", err)
+		fmt.Println("Error :‡", err)
 		os.Exit(1)
 	}
 
