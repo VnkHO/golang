@@ -38,12 +38,13 @@ func main() {
 			zipCode: 75000,
 		},
 	}
-	kim.updateName("Kimmy")
+	kimPointer := &kim
+	kimPointer.updateName("Kimmy")
 	kim.print()
 }
 
-func (p person) updateName(newFirstName string) {
-	p.firstName = newFirstName
+func (pointerToPerson *person) updateName(newFirstName string) {
+	(*pointerToPerson).firstName = newFirstName
 }
 
 func (p person) print() {
