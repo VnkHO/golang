@@ -2,10 +2,16 @@ package main
 
 import "fmt"
 
+type contactInfo struct {
+	email   string
+	zipCode int
+}
+
 // Defining a new custom type
 type person struct {
 	firstName string
 	lastName  string
+	contact   contactInfo
 }
 
 func main() {
@@ -23,4 +29,23 @@ func main() {
 
 	fmt.Println(alex)
 	fmt.Printf("%+v", alex)
+
+	kim := person{
+		firstName: "Kim",
+		lastName:  "Gary",
+		contact: contactInfo{
+			email:   "kim.gary@gmail.com",
+			zipCode: 75000,
+		},
+	}
+	fmt.Printf("%+v", kim)
 }
+
+/*
+
+	Structs
+		Data structure. Collection of propertiees that are related together.
+
+*/
+
+// You can think a struct is "like" an object in JavaScript
