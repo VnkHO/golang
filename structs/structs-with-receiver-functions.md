@@ -1,4 +1,4 @@
-# Embedding structs
+# Structs with Receiver Functions
 
 ```
 
@@ -10,7 +10,7 @@
   type person struct {
     firstName string
     lastName  string
-    contact   contactInfo
+    contactInfo
   }
 
 function main() {
@@ -18,14 +18,24 @@ function main() {
   kim := person{
 		firstName: "Kim",
 		lastName:  "Gary",
-		contact: contactInfo{
+		contactInfo: contactInfo{
 			email:   "kim.gary@gmail.com",
 			zipCode: 75000,
 		},
 	}
+	kim.updateName("Kimmy")
 	fmt.Printf("%+v", kim)
+}
+
+func (p person) updateName(newFirstName string) {
+	p.firstName = newFirstName
+}
+
+func (p person) print() {
+  fmt.Printf("%+v", p)
 }
 
 ```
 
-The ability eo embed one struct inside of another. 
+We do not get Kimmy.
+We do need pointer.
