@@ -11,7 +11,7 @@ func main() {
 
 func updateSlice(s []string) {
   s[0] = "Bye"
-} 
+}
 
 [Bye There You]
 
