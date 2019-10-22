@@ -108,6 +108,8 @@ func main() {
 
 ```
 
+---
+
 Step by step:
 
 ```
@@ -182,6 +184,8 @@ So inside the function, we say **\*pointerToPerson**;
 So remember what \* and then an actual pointer means; it says take this memory **\*pointerToPerson** and turn it into an actual value.
 
 So **(\*pointerToPerson)** gets turned into the actual _kim_ person that is sitting in memory.
+
+---
 
 Some couple of points:
 
