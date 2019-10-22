@@ -38,4 +38,4 @@ func (p person) print() {
 ```
 
 We do not get Kimmy.
-We do need pointer. 
+We do need pointer.

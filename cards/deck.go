@@ -35,6 +35,7 @@ func newDeck() deck {
 }
 
 // Print -> Purpose of this function is going to be to loop through our deck of cards and print ou the value
+// Receiver function
 func (d deck) print() {
 
 	for i, card := range d {
