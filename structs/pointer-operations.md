@@ -26,7 +26,7 @@ func main() {
 
 ### &variable:
 
-Give me the memory address of the value this variable is pointing at
+**Give me the memory address of the value this variable is pointing at**
 
 When we do that, we are saying:
 Look at this variable and give us access to the memory address that this variable is pointing at.
@@ -63,7 +63,7 @@ If we were to konw print out the value of _kimPointer_; we would probably see so
 
 ### \*pointer
 
-Give me the value this memory address is pointing at
+**Give me the value this memory address is pointing at**
 
 So whenever we use the **\*** operator we place the star and then a memory address or a pointer.
 
