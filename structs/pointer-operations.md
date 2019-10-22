@@ -197,12 +197,8 @@ Some couple of points:
 
 person{firstName: "Kim"...} -> value
 
-Turn **address** into _value_ with **\*address**
+1. Turn **address** into _value_ with **\*address**
+- **\*address** --> Turn **address** into _value_
 
-**\*address** Turn **address** into _value_
-
----
-
-Turn _value_ into **address** with _&value_
-
-_&value_ --> Turn _value_ into **address**
+1. Turn _value_ into **address** with _&value_
+- _&value_ --> Turn _value_ into **address**
